@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<tilte>猜歌王後台系統</title>
+		<tilte>猜歌王後台系統-題目製作系統</title>
 		<script src=src/spotify-web-api.js></script>
 		<script src=src/q.js></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	</head>
 	<body>
-		<div>
-		</div>
 		<div id="button">
-      		<label> <input id="query" value='type to search' type="text"/><button id="search-button">Search</button></label>
+            <p>請輸入歌名後搜尋</p>
+      		<label> <input id="query" type="text"/><button id="search-button">Search</button></label>
     	</div>
+    	<div id="search-result">
+    		<div id="track0">
+                <div id="player0"></div>
+    		</div>
+    		<div id="track1">
+                <div id="player1"></div>
+    		</div>
+    		<div id="track2">
+                <div id="player2"></div>
+    		</div>
+    		<div id="track3">
+                <div id="player3"></div>
+    		</div>
+    		<div id="track4">
+                <div id="player4"></div>
+    		</div>
+    	</div>
+        <div>
+            <p>請輸入題目</p>
+            <label><input id="question" type="text"/></label>
+        </div>
+        <div>
+            <p>請輸入四個選項</p>
+        </div>
+        <div>
+            <label><input id="choice0" type="text"/></label>
+        </div>
+        <div>
+            <label><input id="choice1" type="text"/></label>
+        </div>
+        <div>
+            <label><input id="choice2" type="text"/></label>
+        </div>
+        <div>
+            <label><input id="choice3" type="text"/></label>
+        </div>
+        <div>
+            <button id="send-button">送出</button>
+            <button id="clear-button">清除</button>
+        </div>
 		<script src=src/main.js></script>
 	</body>
 </html>
