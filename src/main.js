@@ -1,6 +1,6 @@
 var spotifyApi = new SpotifyWebApi();
 spotifyApi.setPromiseImplementation(Q);
-document.getElementById("search-buttons").addEventListener("click", myFunction);
+document.getElementById("search-button").addEventListener("click", search);
 
 function search() {
   var q = $('#query').val();
