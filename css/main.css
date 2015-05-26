@@ -1,0 +1,24 @@
+#search-result{
+	float:left;
+}
+
+#question-setting{
+	float: right;
+	width: 50em;
+}
+
+#question{
+	width: 30em;
+}
+
+.choice-block{
+	height: 5em;
+}
+
+.choice{
+	width: 20em;
+}
+
+.player{
+	padding-left: 5em;
+}
