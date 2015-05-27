@@ -1,10 +1,13 @@
 #search-result{
 	float:left;
+	width: 50em;
+	height: 60em;
 }
 
 #question-setting{
 	float: right;
 	width: 50em;
+	height: 60em;
 }
 
 #question{
