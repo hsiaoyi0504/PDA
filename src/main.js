@@ -26,7 +26,15 @@ function search() {
 }
 
 function send() {
-
+  $.ajax({
+    type: "POST",
+    url: 'http://140.112.18.201/action.php',
+    crossDomain: true,
+    data:{action:'add'},
+    success:function(html) {
+      alert(html);
+    }
+    });
 }
 
 function clear() {
