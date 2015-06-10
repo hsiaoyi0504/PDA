@@ -4,6 +4,7 @@ document.getElementById("search-button").addEventListener("click", search);
 document.getElementById("send-button").addEventListener("click", send);
 document.getElementById("clear-button").addEventListener("click", clear);
 
+var searchResult;
 function search() {
   var q = $('#query').val();
   // search tracks whose name, album or artist contains 'Love'
@@ -20,6 +21,7 @@ function search() {
              +'歌曲名稱:'+data.tracks.items[i].name+'<br>'
              +'試聽版(30秒版本):'+'<a target="_blank" href="'+data.tracks.items[i].preview_url+'">'+'試聽按此'+'</a>';
       }
+      searchResult=data;
   }, function(err) {
     console.error(err);
   });
@@ -30,7 +32,18 @@ function send() {
     type: "POST",
     url: 'http://140.112.18.201/action.php',
     crossDomain: true,
-    data:{action:'add'},
+    data:{
+      action:'add',
+      questionDescription:document.getElementById("question").value,
+      trackID:searchResult.tracks.items[(document.getElementById("song-choice").value)].id,
+      choice0:document.getElementById("choice0").value,
+     // choice0:document.getElementById("question").value,
+     // questionDescription:document.getElementById("choice0").value,
+      choice1:document.getElementById("choice1").value,
+      choice2:document.getElementById("choice2").value,
+      choice3:document.getElementById("choice3").value,
+      correctChoice:document.getElementById("correct-choice").value
+    },
     success:function(html) {
       alert(html);
     }

@@ -49,7 +49,7 @@ $cfg['Servers'][$i]['users'] = 'pma_users';
 $cfg['Servers'][$i]['usergroups'] = 'pma_usergroups';
 $cfg['Servers'][$i]['navigationhiding'] = 'pma_navigationhiding';
 $cfg['Servers'][$i]['savedsearches'] = 'pma_savedsearches';
-
+$cfg['SendErrorReports'] = 'never';
 /*
  * End of servers configuration
  */

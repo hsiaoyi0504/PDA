@@ -1,6 +1,5 @@
 <?php
 include("connMysql.php");
-
 //if (!@mysql_select_db("class")) die("資料庫選擇失敗！");
 if(isset($_POST["action"])&&($_POST["action"]=="update")){	
 	$sql_query = "UPDATE `main` SET ";
@@ -61,7 +60,7 @@ $row_result=mysqli_fetch_assoc($result);
     </tr>
     <tr>
       <td colspan="2" align="center">
-      <input name="cID" type="hidden" value="<?php echo $row_result["questionID"];?>">
+      <input name="questionID" type="hidden" value="<?php echo $row_result["questionID"];?>">
       <input name="action" type="hidden" value="update">
       <input type="submit" name="button" id="button" value="更新資料">
       <input type="reset" name="button2" id="button2" value="重新填寫">
