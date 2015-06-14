@@ -36,6 +36,7 @@
 		while($row=mysqli_fetch_assoc($result)){
 			$questionArray=$row;
 		}
+//		print_r($questionArray);
 		$json=json_encode($questionArray);
 		echo $json;
 	}
