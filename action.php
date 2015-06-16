@@ -24,7 +24,7 @@
 //		echo $sql_query;
 		$result=mysqli_query($link,$sql_query);
 		//重新導向回到主畫面
-		//header("Location: data.php");	
+		header("Location: data.php");	
 		if($result==false){
 			echo "false";
 			printf("Errormessage: %s\n", mysqli_error($link));

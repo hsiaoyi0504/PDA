@@ -15,9 +15,9 @@ function search() {
     for(i=0;i<tracksMaxNum;i++){
       document.getElementById("player"+i).innerHTML=
 //      '<pre>'+
-            '完整版:'+'<br>'
-             +'<iframe src="https://embed.spotify.com/?uri=spotify:track:'+data.tracks.items[i].id+'"'+'width="250" height="80" frameborder="0" allowtransparency="true"></iframe><br>'
-             +'專輯名稱:'+data.tracks.items[i].album.name+'<br>'
+ //           '完整版:'+'<br>'
+ //            +'<iframe src="https://embed.spotify.com/?uri=spotify:track:'+data.tracks.items[i].id+'"'+'width="250" height="80" frameborder="0" allowtransparency="true"></iframe><br>'
+             '專輯名稱:'+data.tracks.items[i].album.name+'<br>'
              +'歌曲名稱:'+data.tracks.items[i].name+'<br>'
              +'試聽版(30秒版本):'+'<a target="_blank" href="'+data.tracks.items[i].preview_url+'">'+'試聽按此'+'</a>';
       }
@@ -45,7 +45,7 @@ function send() {
       correctChoice:document.getElementById("correct-choice").value
     },
     success:function(html) {
-      alert(html);
+      //alert(html);
     }
     });
 }
