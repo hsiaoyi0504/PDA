@@ -6,6 +6,9 @@
 	if($_GET['action'] == 'get') {
 		getQuestion();
 	}
+	else if($_GET['action'] == 'get3'){
+		get3Question();
+	}
 	function add(){
 		include("connMysql.php");
 		$sql_query = "INSERT INTO `main` (`questionDescription` ,`trackID`,`choice0` ,`choice1` ,`choice2` ,`choice3` ,`correctChoice`) VALUES (";
@@ -38,6 +41,31 @@
 		}
 //		print_r($questionArray);
 		$json=json_encode($questionArray);
+		echo $json;
+	}
+	function get3Question(){
+		include("connMysql.php");
+		header('Content-Type:application/json; charset=utf-8');
+		$sql_query1="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID1"]."'";
+		$sql_query2="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID2"]."'";
+		$sql_query3="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID3"]."'";
+		$result1=mysqli_query($link,$sql_query1);
+		$result2=mysqli_query($link,$sql_query2);
+		$result3=mysqli_query($link,$sql_query3);
+		$questionArray1=array();
+		$questionArray2=array();
+		$questionArray3=array();
+		while($row=mysqli_fetch_assoc($result1)){
+			$questionArray1=$row;
+		}
+		while($row=mysqli_fetch_assoc($result2)){
+			$questionArray2=$row;
+		}
+		while($row=mysqli_fetch_assoc($result3)){
+			$questionArray3=$row;
+		}
+		$result['questions']=array($questionArray1,$questionArray2,$questionArray3);
+		$json=json_encode($result);
 		echo $json;
 	}
 ?>
