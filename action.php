@@ -11,9 +11,9 @@
 	}
 	function add(){
 		include("connMysql.php");
-		$sql_query = "INSERT INTO `main` (`questionDescription` ,`trackID`,`choice0` ,`choice1` ,`choice2` ,`choice3` ,`correctChoice`) VALUES (";
+		$sql_query = "INSERT INTO `main` (`questionDescription` ,`preview_url`,`choice0` ,`choice1` ,`choice2` ,`choice3` ,`correctChoice`) VALUES (";
 		$sql_query .= "'".$_POST["questionDescription"]."',";
-		$sql_query .= "'".$_POST["trackID"]."',";
+		$sql_query .= "'".$_POST["preview_url"]."',";
 		$sql_query .= "'".$_POST["choice0"]."',";
 		$sql_query .= "'".$_POST["choice1"]."',";
 		$sql_query .= "'".$_POST["choice2"]."',";
@@ -24,7 +24,7 @@
 //		echo $sql_query;
 		$result=mysqli_query($link,$sql_query);
 		//重新導向回到主畫面
-		header("Location: data.php");	
+		//header("Location: data.php");	
 		if($result==false){
 			echo "false";
 			printf("Errormessage: %s\n", mysqli_error($link));

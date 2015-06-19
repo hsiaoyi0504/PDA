@@ -4,7 +4,7 @@ include("connMysql.php");
 if(isset($_POST["action"])&&($_POST["action"]=="update")){	
 	$sql_query = "UPDATE `main` SET ";
 	$sql_query .= "`questionDescription`='".$_POST["questionDescription"]."',";
-  $sql_query .= "`trackID`='".$_POST["trackID"]."',";
+  $sql_query .= "`preview_url`='".$_POST["preview_url"]."',";
 	$sql_query .= "`choice0`='".$_POST["choice0"]."',";
 	$sql_query .= "`choice1`='".$_POST["choice1"]."',";
 	$sql_query .= "`choice2`='".$_POST["choice2"]."',";
@@ -40,7 +40,7 @@ $row_result=mysqli_fetch_assoc($result);
       <td>題目敘述</td><td><input type="text" name="questionDescription" id="questionDescription" value="<?php echo $row_result["questionDescription"];?>"></td>
     </tr>
     <tr>
-      <td>歌曲代號</td><td><input type="text" name="trackID" id="trackID" value="<?php echo $row_result["trackID"];?>"></td>
+      <td>歌曲試聽版網址</td><td><input type="text" name="preview_url" id="preview_url" value="<?php echo $row_result["preview_url"];?>"></td>
       </td>
     </tr>
     <tr>

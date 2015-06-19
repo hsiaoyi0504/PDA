@@ -9,7 +9,7 @@ function search() {
   var q = $('#query').val();
   // search tracks whose name, album or artist contains 'Love'
   const tracksMaxNum=5;
-  spotifyApi.searchTracks('name:'+q,{limit: tracksMaxNum})
+  spotifyApi.searchTracks(q,{limit: tracksMaxNum})
   .then(function(data) {
 //    console.log('Search by ',data);
     for(i=0;i<tracksMaxNum;i++){
@@ -22,6 +22,7 @@ function search() {
              +'試聽版(30秒版本):'+'<a target="_blank" href="'+data.tracks.items[i].preview_url+'">'+'試聽按此'+'</a>';
       }
       searchResult=data;
+    //  console.log(data);
   }, function(err) {
     console.error(err);
   });
@@ -35,7 +36,7 @@ function send() {
     data:{
       action:'add',
       questionDescription:document.getElementById("question").value,
-      trackID:searchResult.tracks.items[(document.getElementById("song-choice").value)].id,
+      preview_url:searchResult.tracks.items[(document.getElementById("song-choice").value)].preview_url,
       choice0:document.getElementById("choice0").value,
      // choice0:document.getElementById("question").value,
      // questionDescription:document.getElementById("choice0").value,
@@ -45,7 +46,7 @@ function send() {
       correctChoice:document.getElementById("correct-choice").value
     },
     success:function(html) {
-      //alert(html);
+      alert("Add Data Success");
     }
     });
 }

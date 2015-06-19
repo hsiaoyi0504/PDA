@@ -21,7 +21,7 @@
   <tr>
     <th>題目編號</th>
     <th>題目敘述</th>
-    <th>歌曲代號</th>
+    <th>歌曲試聽版網址</th>
     <th>選項0</th>
     <th>選項1</th>
     <th>選項2</th>
@@ -35,7 +35,7 @@
 		echo "<tr>";
 		echo "<td>".$row_result["questionID"]."</td>";
 		echo "<td>".$row_result["questionDescription"]."</td>";
-		echo "<td>".$row_result["trackID"]."</td>";
+		echo "<td>".$row_result["preview_url"]."</td>";
 		echo "<td>".$row_result["choice0"]."</td>";
 		echo "<td>".$row_result["choice1"]."</td>";
 		echo "<td>".$row_result["choice2"]."</td>";
