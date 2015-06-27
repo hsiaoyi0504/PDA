@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 	header("Content-Type: text/html; charset=utf-8");
 	include("connMysql.php");
 //	$seldb = @mysql_select_db("question_list");
@@ -7,7 +7,7 @@
 	$result = mysqli_query($link,$sql_query);
 	$total_records = mysqli_num_rows($result);
 ?>
-
+-->
 
 <html>
 	<head>
@@ -44,8 +44,9 @@
 				    <th>功能</th>
 				  </tr>
   			<!-- 資料內容 -->
+<!--
 		<?php
-		
+		/*
 			while($row_result=mysqli_fetch_assoc($result)){
 				echo "<tr>";
 				echo "<td>".$row_result["questionID"]."</td>";
@@ -60,8 +61,9 @@
 				echo "<a href='delete.php?id=".$row_result["questionID"]."'>刪除</a></td>";
 				echo "</tr>";
 			}
-			
+			*/
 		?>
+	-->
 			</table>
 	</body>
 </html>

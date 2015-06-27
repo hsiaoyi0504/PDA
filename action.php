@@ -11,7 +11,7 @@
 	}
 	function add(){
 		include("connMysql.php");
-		$sql_query = "INSERT INTO `main` (`questionDescription` ,`preview_url`,`choice0` ,`choice1` ,`choice2` ,`choice3` ,`correctChoice`) VALUES (";
+		$sql_query = "INSERT INTO `english_fashion` (`questionDescription` ,`preview_url`,`choice0` ,`choice1` ,`choice2` ,`choice3` ,`correctChoice`) VALUES (";
 		$sql_query .= "'".$_POST["questionDescription"]."',";
 		$sql_query .= "'".$_POST["preview_url"]."',";
 		$sql_query .= "'".$_POST["choice0"]."',";
@@ -33,7 +33,7 @@
 	function getQuestion(){
 		include("connMysql.php");
 		header('Content-Type:application/json; charset=utf-8');
-		$sql_query="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID"]."'";
+		$sql_query="SELECT * FROM `english_fashion` WHERE `questionID`="."'".$_GET["questionID"]."'";
 		$result=mysqli_query($link,$sql_query);
 		$questionArray=array();
 		while($row=mysqli_fetch_assoc($result)){
@@ -46,9 +46,9 @@
 	function get3Question(){
 		include("connMysql.php");
 		header('Content-Type:application/json; charset=utf-8');
-		$sql_query1="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID1"]."'";
-		$sql_query2="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID2"]."'";
-		$sql_query3="SELECT * FROM `main` WHERE `questionID`="."'".$_GET["questionID3"]."'";
+		$sql_query1="SELECT * FROM `english_fashion` WHERE `questionID`="."'".$_GET["questionID1"]."'";
+		$sql_query2="SELECT * FROM `english_fashion` WHERE `questionID`="."'".$_GET["questionID2"]."'";
+		$sql_query3="SELECT * FROM `english_fashion` WHERE `questionID`="."'".$_GET["questionID3"]."'";
 		$result1=mysqli_query($link,$sql_query1);
 		$result2=mysqli_query($link,$sql_query2);
 		$result3=mysqli_query($link,$sql_query3);

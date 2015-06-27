@@ -2,13 +2,13 @@
 include("connMysql.php");
 
 if(isset($_POST["action"])&&($_POST["action"]=="delete")){	
-	$sql_query = "DELETE FROM `main` WHERE `questionID`=".$_POST["questionID"];
+	$sql_query = "DELETE FROM `english_fashion` WHERE `questionID`=".$_POST["questionID"];
 	mysqli_query($link,$sql_query);
 	//重新導向回到主畫面
 	header("Location: data.php");
 
 }
-$sql_db = "SELECT * FROM `main` WHERE `questionID`=".$_GET["id"];
+$sql_db = "SELECT * FROM `english_fashion` WHERE `questionID`=".$_GET["id"];
 $result = mysqli_query($link,$sql_db);
 $row_result=mysqli_fetch_assoc($result);
 
