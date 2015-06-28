@@ -35,11 +35,10 @@ function send() {
     crossDomain: true,
     data:{
       action:'add',
+      songType:document.getElementById("song-type-choice").value,
       questionDescription:document.getElementById("question").value,
       preview_url:searchResult.tracks.items[(document.getElementById("song-choice").value)].preview_url,
       choice0:document.getElementById("choice0").value,
-     // choice0:document.getElementById("question").value,
-     // questionDescription:document.getElementById("choice0").value,
       choice1:document.getElementById("choice1").value,
       choice2:document.getElementById("choice2").value,
       choice3:document.getElementById("choice3").value,
@@ -47,6 +46,7 @@ function send() {
     },
     success:function(html) {
       alert("Add Data Success");
+      history.go(0);
     }
     });
 }
