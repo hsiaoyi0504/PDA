@@ -1,7 +1,8 @@
 <?php
 	header("Access-Control-Allow-Origin: *");
-	if($_POST['action'] == 'add') {
-		add();
+	if(isset($_POST['action'])) {
+		if($_POST['action']=='add')
+			add();
 	}
 	if($_GET['action'] == 'get') {
 		getQuestion();
@@ -25,7 +26,7 @@
 				$sql_dataTable="chineese_oldies";
 			break;
 			case "5":
-				$sql_dataTable="classical";
+				$sql_dataTable="classical";	
 			break;
 			default:
 				$sql_dataTable="english_fashion";
@@ -45,6 +46,9 @@
 			echo "false";
 			printf("Errormessage: %s\n", mysqli_error($link));
 		}
+		else
+			echo "true";
+		echo("<script>console.log('PHP:'); </script>");
 	}
 	function getQuestion(){
 		include("connMysql.php");

@@ -1,31 +1,44 @@
 var spotifyApi = new SpotifyWebApi();
 spotifyApi.setPromiseImplementation(Q);
 document.getElementById("search-button").addEventListener("click", search);
-document.getElementById("send-button").addEventListener("click", send);
-document.getElementById("clear-button").addEventListener("click", clear);
+document.getElementById("query").addEventListener("click",hide);
+var haveClicked=false;
+//document.getElementById("send-button").addEventListener("click", send);
+//document.getElementById("clear-button").addEventListener("click", clear);
 
 var searchResult;
 function search() {
   var q = $('#query').val();
   // search tracks whose name, album or artist contains 'Love'
-  const tracksMaxNum=5;
+  const tracksMaxNum=6;
   spotifyApi.searchTracks(q,{limit: tracksMaxNum})
   .then(function(data) {
 //    console.log('Search by ',data);
     for(i=0;i<tracksMaxNum;i++){
       document.getElementById("player"+i).innerHTML=
-//      '<pre>'+
  //           '完整版:'+'<br>'
  //            +'<iframe src="https://embed.spotify.com/?uri=spotify:track:'+data.tracks.items[i].id+'"'+'width="250" height="80" frameborder="0" allowtransparency="true"></iframe><br>'
-             '專輯名稱:'+data.tracks.items[i].album.name+'<br>'
+             '歌曲'+i+':'+'<br>'
+             +'專輯名稱:'+data.tracks.items[i].album.name+'<br>'
              +'歌曲名稱:'+data.tracks.items[i].name+'<br>'
-             +'試聽版(30秒版本):'+'<a target="_blank" href="'+data.tracks.items[i].preview_url+'">'+'試聽按此'+'</a>';
+             +'歌曲作者:'+data.tracks.items[i].artists.name+'<br>'
+             +'試聽版(30秒版本):'+'<a target="_blank" href="'+data.tracks.items[i].preview_url+'">'+'試聽按此'+'</a>'+'<br>'
+             +'試聽版網址:'+'<input id="input'+i+'" value="'+data.tracks.items[i].preview_url+'">'+'</input>'
+          //   +'<button id="button'+i+'"'+'onclick="copy('+i+')">Copy</button>'
+             +'<br>'+'<br>';
       }
       searchResult=data;
     //  console.log(data);
   }, function(err) {
     console.error(err);
   });
+}
+
+function hide(){
+  if(haveClicked==false){
+    document.getElementById("query").value="";
+    haveClicked=true;
+  }
 }
 
 function send() {
@@ -58,4 +71,29 @@ function clear() {
   document.getElementById("choice3").value = "";
   document.getElementById("question").value = "";
   document.getElementById("query").value = "";
+}
+
+function copy(p){
+   // Select the preview link anchor text 
+  var copyPreviewLinkBtn = document.querySelector('#button'+p);  
+  var previewLink = document.querySelector('#input'+p);  
+  var range = document.createRange();  
+  range.selectNode(previewLink);  
+  window.getSelection().addRange(range);  
+    
+  //try {  
+    // Now that we've selected the anchor text, execute the copy command  
+    var successful = document.execCommand('copy');  
+    var msg = successful ? 'successful' : 'unsuccessful';  
+  //  console.log('Copy previewLink command was ' + msg);  
+  //} catch(err) {  
+  //  console.log('Oops, unable to copy');  
+  //}  
+    
+  // Remove the selections - NOTE: Should use   
+  //removeRange(range) when it is supported
+  //removeRange(range);  
+  window.getSelection().removeAllRanges();
+
+  //document.getElementById("input"+p).value)
 }

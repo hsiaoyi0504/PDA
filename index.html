@@ -8,29 +8,33 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
-	<body background="img/background.jpg">
+	<body>
 		<div id="button">
-            <p>step1:請輸入歌名後搜尋</p>
-      		<label> <input id="query" type="text"/><button id="search-button">Search</button></label>
+          <!--  <p>step1:請輸入歌名後搜尋</p>-->
+      		<label> <input id="query" type="text" value="請輸入歌名後搜尋"/><button id="search-button">Search</button></label>
     	</div>
     	<div id="search-result">
-    		<div id="track0">歌曲0:
+    		<div id="track0">
                 <div class="player" id="player0"></div>
     		</div>
-    		<div id="track1">歌曲1:
+    		<div id="track1">
                 <div class="player" id="player1"></div>
     		</div>
-    		<div id="track2">歌曲2:
+    		<div id="track2">
                 <div class="player" id="player2"></div>
     		</div>
-    		<div id="track3">歌曲3:
+    		<div id="track3">
                 <div class="player" id="player3"></div>
     		</div>
-    		<div id="track4">歌曲4:
+    		<div id="track4">
                 <div class="player" id="player4"></div>
     		</div>
+            <div id="track5">
+                <div class="player" id="player5"></div>
+            </div>
     	</div>
         <div id="question-setting">
+            <!--
             <div>
                 <p>step2:請選擇歌曲類型</p>
                 <select id="song-type-choice">
@@ -55,7 +59,7 @@
                     <option value="2">選項2</option>
                     <option value="3">選項3</option>
                 </select>
-                <p>step5:請輸入題目</p>
+                <p>step5:請輸入題目(類型代號)</p>
                 <label><input id="question" type="text"/></label>
             </div>
             <div>
@@ -77,6 +81,7 @@
                 <button id="send-button">送出</button>
                 <button id="clear-button">清除</button>
             </div>
+        -->
         </div>
 		<script src=src/main.js></script>
 	</body>
