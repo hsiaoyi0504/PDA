@@ -9,7 +9,7 @@ function start(){
   var dataSent={
     "action":"get",
     "questionID":"0002",
-    "songType":"english_fashion"
+    "songType":"3"
 	}
   var url = "http://140.112.18.201/action.php";
 

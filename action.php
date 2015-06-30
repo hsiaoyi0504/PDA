@@ -84,7 +84,7 @@
 	function get3Question(){
 		include("connMysql.php");
 		header('Content-Type:application/json; charset=utf-8');
-		switch($_POST["songType"]){
+		switch($_GET["songType"]){
 			case "1":
 				$sql_dataTable="english_fashion";
 			break;
