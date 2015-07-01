@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		244BCC721B2D2DB40066B3E1 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BCC711B2D2DB40066B3E1 /* GamePlayViewController.swift */; };
+		244BCC741B2D31F30066B3E1 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BCC731B2D31F30066B3E1 /* GameManager.swift */; };
+		245D3D391B2D3B2E0066899D /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D3D381B2D3B2E0066899D /* Connection.swift */; };
+		277C51811B31170500EFE2CA /* 康熙字典體.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 277C51801B31170500EFE2CA /* 康熙字典體.TTF */; };
+		27DB165D1B3E7F1000E91923 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DB165C1B3E7F1000E91923 /* UserInfoViewController.swift */; };
+		27DB165F1B3EB13300E91923 /* SetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DB165E1B3EB13300E91923 /* SetInfoViewController.swift */; };
+		27DB16611B3EC59100E91923 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DB16601B3EC59100E91923 /* Image.xcassets */; };
+		27DB16631B3F895900E91923 /* 儷黑Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27DB16621B3F895900E91923 /* 儷黑Pro.ttf */; };
+		27DB16651B3F8CF000E91923 /* Hanzipen.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 27DB16641B3F8CF000E91923 /* Hanzipen.ttc */; };
+		27DB16671B41110D00E91923 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DB16661B41110D00E91923 /* GameResultViewController.swift */; };
+		27F640CE1B2D230F007A3FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F640CD1B2D230F007A3FD6 /* AppDelegate.swift */; };
+		27F640D01B2D230F007A3FD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F640CF1B2D230F007A3FD6 /* ViewController.swift */; };
+		27F640D31B2D230F007A3FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F640D11B2D230F007A3FD6 /* Main.storyboard */; };
+		27F640D81B2D230F007A3FD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F640D61B2D230F007A3FD6 /* LaunchScreen.xib */; };
+		27F640E41B2D230F007A3FD6 /* GuessMusic2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F640E31B2D230F007A3FD6 /* GuessMusic2Tests.swift */; };
+		B09700511B417D4000C6F6C7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B097004F1B417D4000C6F6C7 /* TableViewController.swift */; };
+		B09700521B417D4000C6F6C7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09700501B417D4000C6F6C7 /* TableViewCell.swift */; };
+		B0AF776D1B425F09005F39E8 /* PlayingModeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF776B1B425F09005F39E8 /* PlayingModeTableViewController.swift */; };
+		B0AF776E1B425F09005F39E8 /* PlayingModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF776C1B425F09005F39E8 /* PlayingModeTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27F640DE1B2D230F007A3FD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F640C01B2D230F007A3FD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F640C71B2D230F007A3FD6;
+			remoteInfo = GuessMusic2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		244BCC711B2D2DB40066B3E1 /* GamePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		244BCC731B2D31F30066B3E1 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		245D3D381B2D3B2E0066899D /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		277C51801B31170500EFE2CA /* 康熙字典體.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "康熙字典體.TTF"; sourceTree = "<group>"; };
+		27DB165C1B3E7F1000E91923 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		27DB165E1B3EB13300E91923 /* SetInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetInfoViewController.swift; sourceTree = "<group>"; };
+		27DB16601B3EC59100E91923 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		27DB16621B3F895900E91923 /* 儷黑Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "儷黑Pro.ttf"; sourceTree = "<group>"; };
+		27DB16641B3F8CF000E91923 /* Hanzipen.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hanzipen.ttc; sourceTree = "<group>"; };
+		27DB16661B41110D00E91923 /* GameResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		27F640C81B2D230F007A3FD6 /* GuessMusic2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessMusic2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F640CC1B2D230F007A3FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F640CD1B2D230F007A3FD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27F640CF1B2D230F007A3FD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27F640D21B2D230F007A3FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27F640D71B2D230F007A3FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		27F640DD1B2D230F007A3FD6 /* GuessMusic2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessMusic2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F640E21B2D230F007A3FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F640E31B2D230F007A3FD6 /* GuessMusic2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessMusic2Tests.swift; sourceTree = "<group>"; };
+		B097004F1B417D4000C6F6C7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B09700501B417D4000C6F6C7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B0AF776B1B425F09005F39E8 /* PlayingModeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingModeTableViewController.swift; sourceTree = "<group>"; };
+		B0AF776C1B425F09005F39E8 /* PlayingModeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingModeTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F640C51B2D230F007A3FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F640DA1B2D230F007A3FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		277C517B1B3113EE00EFE2CA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				27DB16641B3F8CF000E91923 /* Hanzipen.ttc */,
+				27DB16621B3F895900E91923 /* 儷黑Pro.ttf */,
+				277C51801B31170500EFE2CA /* 康熙字典體.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		27F640BF1B2D230F007A3FD6 = {
+			isa = PBXGroup;
+			children = (
+				27F640CA1B2D230F007A3FD6 /* GuessMusic2 */,
+				27F640E01B2D230F007A3FD6 /* GuessMusic2Tests */,
+				27F640C91B2D230F007A3FD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27F640C91B2D230F007A3FD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F640C81B2D230F007A3FD6 /* GuessMusic2.app */,
+				27F640DD1B2D230F007A3FD6 /* GuessMusic2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F640CA1B2D230F007A3FD6 /* GuessMusic2 */ = {
+			isa = PBXGroup;
+			children = (
+				277C517B1B3113EE00EFE2CA /* Fonts */,
+				245D3D381B2D3B2E0066899D /* Connection.swift */,
+				27F640CD1B2D230F007A3FD6 /* AppDelegate.swift */,
+				27F640CF1B2D230F007A3FD6 /* ViewController.swift */,
+				B097004F1B417D4000C6F6C7 /* TableViewController.swift */,
+				B09700501B417D4000C6F6C7 /* TableViewCell.swift */,
+				B0AF776B1B425F09005F39E8 /* PlayingModeTableViewController.swift */,
+				B0AF776C1B425F09005F39E8 /* PlayingModeTableViewCell.swift */,
+				27F640D11B2D230F007A3FD6 /* Main.storyboard */,
+				27F640D61B2D230F007A3FD6 /* LaunchScreen.xib */,
+				27DB16601B3EC59100E91923 /* Image.xcassets */,
+				27F640CB1B2D230F007A3FD6 /* Supporting Files */,
+				244BCC711B2D2DB40066B3E1 /* GamePlayViewController.swift */,
+				244BCC731B2D31F30066B3E1 /* GameManager.swift */,
+				27DB165C1B3E7F1000E91923 /* UserInfoViewController.swift */,
+				27DB165E1B3EB13300E91923 /* SetInfoViewController.swift */,
+				27DB16661B41110D00E91923 /* GameResultViewController.swift */,
+			);
+			path = GuessMusic2;
+			sourceTree = "<group>";
+		};
+		27F640CB1B2D230F007A3FD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27F640CC1B2D230F007A3FD6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27F640E01B2D230F007A3FD6 /* GuessMusic2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27F640E31B2D230F007A3FD6 /* GuessMusic2Tests.swift */,
+				27F640E11B2D230F007A3FD6 /* Supporting Files */,
+			);
+			path = GuessMusic2Tests;
+			sourceTree = "<group>";
+		};
+		27F640E11B2D230F007A3FD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27F640E21B2D230F007A3FD6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F640C71B2D230F007A3FD6 /* GuessMusic2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F640E71B2D230F007A3FD6 /* Build configuration list for PBXNativeTarget "GuessMusic2" */;
+			buildPhases = (
+				27F640C41B2D230F007A3FD6 /* Sources */,
+				27F640C51B2D230F007A3FD6 /* Frameworks */,
+				27F640C61B2D230F007A3FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessMusic2;
+			productName = GuessMusic2;
+			productReference = 27F640C81B2D230F007A3FD6 /* GuessMusic2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27F640DC1B2D230F007A3FD6 /* GuessMusic2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F640EA1B2D230F007A3FD6 /* Build configuration list for PBXNativeTarget "GuessMusic2Tests" */;
+			buildPhases = (
+				27F640D91B2D230F007A3FD6 /* Sources */,
+				27F640DA1B2D230F007A3FD6 /* Frameworks */,
+				27F640DB1B2D230F007A3FD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F640DF1B2D230F007A3FD6 /* PBXTargetDependency */,
+			);
+			name = GuessMusic2Tests;
+			productName = GuessMusic2Tests;
+			productReference = 27F640DD1B2D230F007A3FD6 /* GuessMusic2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F640C01B2D230F007A3FD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "HC Chen";
+				TargetAttributes = {
+					27F640C71B2D230F007A3FD6 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					27F640DC1B2D230F007A3FD6 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 27F640C71B2D230F007A3FD6;
+					};
+				};
+			};
+			buildConfigurationList = 27F640C31B2D230F007A3FD6 /* Build configuration list for PBXProject "GuessMusic2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F640BF1B2D230F007A3FD6;
+			productRefGroup = 27F640C91B2D230F007A3FD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F640C71B2D230F007A3FD6 /* GuessMusic2 */,
+				27F640DC1B2D230F007A3FD6 /* GuessMusic2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F640C61B2D230F007A3FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DB16631B3F895900E91923 /* 儷黑Pro.ttf in Resources */,
+				27F640D31B2D230F007A3FD6 /* Main.storyboard in Resources */,
+				27F640D81B2D230F007A3FD6 /* LaunchScreen.xib in Resources */,
+				27DB16611B3EC59100E91923 /* Image.xcassets in Resources */,
+				27DB16651B3F8CF000E91923 /* Hanzipen.ttc in Resources */,
+				277C51811B31170500EFE2CA /* 康熙字典體.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F640DB1B2D230F007A3FD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F640C41B2D230F007A3FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DB165F1B3EB13300E91923 /* SetInfoViewController.swift in Sources */,
+				B0AF776E1B425F09005F39E8 /* PlayingModeTableViewCell.swift in Sources */,
+				27DB16671B41110D00E91923 /* GameResultViewController.swift in Sources */,
+				27F640D01B2D230F007A3FD6 /* ViewController.swift in Sources */,
+				27DB165D1B3E7F1000E91923 /* UserInfoViewController.swift in Sources */,
+				244BCC741B2D31F30066B3E1 /* GameManager.swift in Sources */,
+				B09700521B417D4000C6F6C7 /* TableViewCell.swift in Sources */,
+				245D3D391B2D3B2E0066899D /* Connection.swift in Sources */,
+				244BCC721B2D2DB40066B3E1 /* GamePlayViewController.swift in Sources */,
+				B0AF776D1B425F09005F39E8 /* PlayingModeTableViewController.swift in Sources */,
+				B09700511B417D4000C6F6C7 /* TableViewController.swift in Sources */,
+				27F640CE1B2D230F007A3FD6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F640D91B2D230F007A3FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F640E41B2D230F007A3FD6 /* GuessMusic2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F640DF1B2D230F007A3FD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F640C71B2D230F007A3FD6 /* GuessMusic2 */;
+			targetProxy = 27F640DE1B2D230F007A3FD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27F640D11B2D230F007A3FD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F640D21B2D230F007A3FD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27F640D61B2D230F007A3FD6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F640D71B2D230F007A3FD6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27F640E51B2D230F007A3FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F640E61B2D230F007A3FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F640E81B2D230F007A3FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GuessMusic2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27F640E91B2D230F007A3FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GuessMusic2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27F640EB1B2D230F007A3FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GuessMusic2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessMusic2.app/GuessMusic2";
+			};
+			name = Debug;
+		};
+		27F640EC1B2D230F007A3FD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GuessMusic2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessMusic2.app/GuessMusic2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F640C31B2D230F007A3FD6 /* Build configuration list for PBXProject "GuessMusic2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F640E51B2D230F007A3FD6 /* Debug */,
+				27F640E61B2D230F007A3FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F640E71B2D230F007A3FD6 /* Build configuration list for PBXNativeTarget "GuessMusic2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F640E81B2D230F007A3FD6 /* Debug */,
+				27F640E91B2D230F007A3FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F640EA1B2D230F007A3FD6 /* Build configuration list for PBXNativeTarget "GuessMusic2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F640EB1B2D230F007A3FD6 /* Debug */,
+				27F640EC1B2D230F007A3FD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27F640C01B2D230F007A3FD6 /* Project object */;
+}

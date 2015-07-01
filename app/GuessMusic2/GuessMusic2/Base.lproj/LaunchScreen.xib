@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginview" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-9W-IwM">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="y9c-9W-IwM" secondAttribute="centerX" constant="-10" id="cdt-to-hmk"/>
+                <constraint firstAttribute="trailing" secondItem="y9c-9W-IwM" secondAttribute="trailing" id="su4-Dc-77P"/>
+                <constraint firstItem="y9c-9W-IwM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xeW-lQ-V8O"/>
+                <constraint firstAttribute="bottom" secondItem="y9c-9W-IwM" secondAttribute="bottom" id="ySA-yZ-n8I"/>
+                <constraint firstItem="y9c-9W-IwM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ywh-qS-Nyy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="cdt-to-hmk"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beginview" width="766" height="1080"/>
+    </resources>
+</document>
