@@ -15,12 +15,14 @@ class GameResultViewController: UIViewController {
     @IBOutlet weak var money_label: UILabel!
     @IBOutlet weak var exp_label: UILabel!
     @IBOutlet weak var power_label: UILabel!
+    @IBOutlet weak var resultimage: UIImageView!
     
     var myScore = 0
     var opScore = 0
     var money = 0
     var exp = 0
     var power = 0
+    var result = -1 //1 for win
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,12 @@ class GameResultViewController: UIViewController {
         money_label.text = "獲得金錢： \(money)"
         exp_label.text = "獲得經驗： \(exp)"
         power_label.text = "獲得能量： \(power)"
+        
+        if result == 0{
+            resultimage.image = UIImage(named:"lose")
+        }else if result == 1{
+            resultimage.image = UIImage(named:"win")
+        }
     }
     
     func updateUserInfo() {
@@ -51,6 +59,14 @@ class GameResultViewController: UIViewController {
         defaults.setInteger(newExp, forKey: Info.Exp)
         let newPower = defaults.integerForKey(Info.Power) + power
         defaults.setInteger(newPower, forKey: Info.Power)
+        
+        if result == 0{
+            let lose = defaults.integerForKey(Info.Lose) + 1
+            defaults.setInteger(lose, forKey: Info.Lose)
+        }else if result == 1{
+            let win = defaults.integerForKey(Info.Win) + 1
+            defaults.setInteger(win, forKey: Info.Win)
+        }
     }
     
     /*

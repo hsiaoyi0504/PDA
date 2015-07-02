@@ -216,6 +216,7 @@ class GamePlayViewController: UIViewController {
         } else if state == "enable" {
             for i in 0...3 {
                 buttons[i].setTitle(choices[i], forState: .Normal)
+                buttons[i].setTitleColor(UIColor.blackColor(), forState: .Normal)
                 buttons[i].enabled = true
             }
         } else if state == "freeze" {
@@ -259,7 +260,9 @@ class GamePlayViewController: UIViewController {
     
     func deleteTwoOption(op1: Int, op2: Int) {
         buttons[op1].enabled = false
+        buttons[op1].setTitleColor(UIColor.redColor(), forState: .Normal)
         buttons[op2].enabled = false
+        buttons[op2].setTitleColor(UIColor.redColor(), forState: .Normal)
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
@@ -296,6 +299,12 @@ class GamePlayViewController: UIViewController {
             rVC.money = moneyGained
             rVC.exp = expGained
             rVC.power = powerGained
+            
+            if self.myScore >= self.opScore{
+            rVC.result = 1
+            }else{
+            rVC.result = 0
+            }
         }
     }
 

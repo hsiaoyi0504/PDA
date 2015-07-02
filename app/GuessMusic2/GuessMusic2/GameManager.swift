@@ -36,6 +36,10 @@ class GameManager {
     var opReady = false
     var opOver = false
     var gameMode = -1
+    // Client
+    var cId1 = 0
+    var cId2 = 0
+    var cId3 = 0
     // Opponent's information
     var opName = ""
     var opLevel = -1
@@ -116,6 +120,10 @@ class GameManager {
         case State.Client:
             if tokens[0] == "getquestions" {
                 getQuestion()
+            } else if tokens[0] == "ids" {
+                cId1 = tokens[1].toInt()!
+                cId2 = tokens[2].toInt()!
+                cId3 = tokens[3].toInt()!
             } else if tokens[0] == "start" {
                 round++
                 state = State.GameOnClient
@@ -179,7 +187,7 @@ class GameManager {
         case 4: type = "5"//"classical"
         default: break
         }
-        let id1 = Int(arc4random_uniform(12)) + 1
+        var id1 = Int(arc4random_uniform(12)) + 1
         var id2 = Int(arc4random_uniform(12)) + 1
         while id2 == id1 {
             id2 = Int(arc4random_uniform(12)) + 1
@@ -187,6 +195,13 @@ class GameManager {
         var id3 = Int(arc4random_uniform(12)) + 1
         while id3 == id2 || id3 == id1 {
             id3 = Int(arc4random_uniform(12)) + 1
+        }
+        if state == State.Host {
+            conn!.sendString("ids;\(id1);\(id2);\(id3)")
+        } else if state == State.Client {
+            id1 = cId1
+            id2 = cId2
+            id3 = cId3
         }
         println("id1:\(id1), id2:\(id2), id3:\(id3)")
         let URL = "http://140.112.18.201/action.php?action=get3&questionID1=\(id1)&questionID2=\(id2)&questionID3=\(id3)&songType=\(type)"
@@ -281,9 +296,9 @@ class GameManager {
         var score = 0
         var bonus = Int(15 - time)
         if choice == answers[round-1] {
-            score = multiplier * (200 + 500/bonus) + adder
+            score = multiplier * (200 + 500/bonus)
         } else {
-            score = 0
+            score = adder
         }
         multiplier = 1
         adder = 0

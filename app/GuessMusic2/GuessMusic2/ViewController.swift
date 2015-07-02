@@ -39,16 +39,16 @@ class ViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let name = defaults.stringForKey(Info.Name) {
         } else { // First time user
-            defaults.setObject("藏鏡人", forKey: Info.Name)
+            defaults.setObject("Default", forKey: Info.Name)
             defaults.setInteger(2, forKey: Info.Icon)
             defaults.setInteger(1, forKey: Info.Level)
             defaults.setInteger(0, forKey: Info.Win)
             defaults.setInteger(0, forKey: Info.Lose)
             defaults.setInteger(3000, forKey: Info.Money)
             defaults.setInteger(50, forKey: Info.Power)
-            defaults.setInteger(1, forKey: Info.Tool1)
-            defaults.setInteger(1, forKey: Info.Tool2)
-            defaults.setInteger(1, forKey: Info.Tool3)
+            defaults.setInteger(3, forKey: Info.Tool1)
+            defaults.setInteger(3, forKey: Info.Tool2)
+            defaults.setInteger(3, forKey: Info.Tool3)
         }
     }
 

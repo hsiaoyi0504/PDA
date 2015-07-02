@@ -46,7 +46,7 @@ class TableViewController: UITableViewController {
             cell.backgroundImageView.image = UIImage(named: "store1")
             cell.itemNameLabel.text = "智慧印記：刪去兩個錯誤選項"
             cell.itemImageView.image = UIImage(named: "delete")
-            cell.itemPriceLabel.text = "\(1000)"
+            cell.itemPriceLabel.text = "\(300)"
             cell.itemNumberLabel.text = "X\(tool1)"
             cell.moneyLabel.text = "\(money)"
             
@@ -90,8 +90,8 @@ class TableViewController: UITableViewController {
         var tool1 = defaults.integerForKey(Info.Tool1)
         var tool2 = defaults.integerForKey(Info.Tool2)
         var tool3 = defaults.integerForKey(Info.Tool3)
-        if row == 0 && money >= 1000{
-            money -= 1000
+        if row == 0 && money >= 300{
+            money -= 300
             tool1 += 1
         }else if row == 1 && money >= 500{
             money -= 500

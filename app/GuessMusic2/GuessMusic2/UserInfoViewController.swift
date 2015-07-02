@@ -17,6 +17,7 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var money_label: UILabel!
     @IBOutlet weak var power_label: UILabel!
     @IBOutlet weak var userIcon: UIImageView!
+    var level = 0
     
     
     override func viewDidLoad() {
@@ -35,6 +36,8 @@ class UserInfoViewController: UIViewController {
     }
     
     func getUserInformation() {
+        //update frame
+        updateUserLevel()
         // Get information from standard user defaults
         let defaults = NSUserDefaults.standardUserDefaults()
         let name = defaults.stringForKey(Info.Name)
@@ -61,6 +64,14 @@ class UserInfoViewController: UIViewController {
         name_label.text = name
         let icon = defaults.integerForKey(Info.Icon)
         userIcon.image = UIImage(named: "\(icon)")
+    }
+    
+    func updateUserLevel() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let exp = defaults.integerForKey(Info.Exp)
+        level = 1 + Int(exp/(2000+(exp/10)))
+        defaults.setInteger(level, forKey: Info.Level)
+        
     }
     
     
